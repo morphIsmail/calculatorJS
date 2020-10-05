@@ -5,29 +5,51 @@
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
+
    <div class="container">
-      <div class="item input"><form name="form"><input type="text" name="textview" readonly></form></div>
+      <div class="item input">0</div>
+
+      <div class="item type">deg</div>
+      <div class="item" onclick="f('sin')">sin</div>
+      <div class="item" onclick="f('cos')">cos</div>
+      <div class="item" onclick="f('tan')">tan</div>
+      <div class="item" onclick="f('ctg')">ctg</div>
+
+      <div class="item" onclick="operation('^')">x<span class="upper">y</span></div>
+      <div class="item" onclick="log('lg')">lg</div>
+      <div class="item" onclick="log('ln')">ln</div>
+      <div class="item" onclick="insert('(')">(</div>
+      <div class="item" onclick="insert(')')">)</div>
+
+      <div class="item" onclick="operation('sqr')">x<span class="upper">2</span></div>
       <div class="item clean" onclick="clean()">C</div>
-      <div class="item back" onclick="back()">&larr;</div>
-      <div class="item" onclick="insert('+')">+</div>
-      <div class="item" onclick="insert('-')">-</div>
-      <div class="item" onclick="insert('*')">&times;</div>
-      <div class="item" onclick="insert('/')">&divide;</div>
+      <div class="item back" onclick="back()">&lArr;</div>
+      <div class="item percent" onclick="percent()">%</div>
+      <div class="item divide" onclick="insert('/')">&divide;</div>
+
+      <div class="item" onclick="operation('^-1')">x<span class="upper">-1</span></div>
       <div class="item" onclick="insert('7')">7</div>
       <div class="item" onclick="insert('8')">8</div>
       <div class="item" onclick="insert('9')">9</div>
-      <div class="item" onclick="insert('(')">(</div>
+      <div class="item mul" onclick="insert('*')">&times;</div>
+
+      <div class="item" onclick="operation('sqrt')">&radic;x</div>
       <div class="item" onclick="insert('4')">4</div>
       <div class="item" onclick="insert('5')">5</div>
       <div class="item" onclick="insert('6')">6</div>
-      <div class="item" onclick="insert(')')">)</div>
+      <div class="item sub" onclick="insert('-')">-</div>
+
+      <div class="item" onclick="fact()">x!</div>
       <div class="item" onclick="insert('1')">1</div>
       <div class="item" onclick="insert('2')">2</div>
       <div class="item" onclick="insert('3')">3</div>
-      <div class="item equal" onclick="equal()">=</div>
+      <div class="item add" onclick="insert('+')">+</div>
+
+      <div class="item" onclick="constant('pi')">&prod;</div>
+      <div class="item" onclick="constant('e')">e</div>
       <div class="item zero" onclick="insert('0')">0</div>
-      <div class="item" onclick="insert('.')">.</div>
+      <div class="item" onclick="insert('.')">,</div>
+      <div class="item equal" onclick="equal()">=</div>
    </div>
 
    <script src="js/main.js"></script>
